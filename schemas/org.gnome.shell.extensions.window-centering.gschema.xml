@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.window-centering" path="/org/gnome/shell/extensions/window-centering/">
+    <key name="frame-width" type="i">
+      <default>86</default>
+    </key>
+    <key name="frame-height" type="i">
+      <default>90</default>
+    </key>
+    <key name="allow-forced-resize" type="b">
+      <default>false</default>
+    </key>
+    <key name="change-position" type="b">
+      <default>true</default>
+    </key>
+    <key name="change-size" type="b">
+      <default>true</default>
+    </key>
+    <key name="centering-keybinding" type="as">
+      <default><![CDATA[['<Alt><Shift>A']]]></default>
+    </key>
+  </schema>
+</schemalist>
