@@ -4,6 +4,6 @@
     "description": "Utilizes a shortcut to center the window on the screen and set its size to a percentage of the current screen resolution.",
     "shell-version": ["45", "46", "47", "48"],
     "url": "https://github.com/hNjJHMTr27/window-centering",
-    "version": 2,
+    "version": 3,
     "settings-schema": "org.gnome.shell.extensions.window-centering"
 }
