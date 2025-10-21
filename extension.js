@@ -10,14 +10,14 @@ export default class WindowCenteringExtension extends Extension {
         this._FrameManager = new FrameManager(this._settings);
         this._KeybindingManager = new KeybindingManager(this._settings);
         this._KeybindingManager.addKeybinding(
-            'centering-keybinding', 
+            'centering-keybinding',
             this._FrameManager.adjustFrame.bind(this._FrameManager)
         );
     }
 
     disable() {
         this._settings = null;
-        
+
         this._KeybindingManager.removeAllKeybindings();
         this._KeybindingManager = null;
         this._FrameManager = null;

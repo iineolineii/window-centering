@@ -30,6 +30,12 @@ export default class WindowCenteringExtensionPreferences extends ExtensionPrefer
             settingKey: 'allow-forced-resize'
         });
 
+        this._addSwitch(mainGroup, settings, {
+            title: _("Include Panel Height"),
+            description: _("When using the specified key combination, the window will be positioned taking into account half the height of the top panel."),
+            settingKey: 'include-panel-height'
+        });
+
         this._addNumericInput(mainGroup, settings, {
             title: _("Percentage Width"),
             description: _("Defines the portion of the total screen width that the window will occupy."),
@@ -52,7 +58,7 @@ export default class WindowCenteringExtensionPreferences extends ExtensionPrefer
     }
 
     _addSwitch(group, settings, { title, description, settingKey }) {
-        const row = new Adw.ActionRow({ 
+        const row = new Adw.ActionRow({
             title,
             subtitle: description
         });
@@ -71,7 +77,7 @@ export default class WindowCenteringExtensionPreferences extends ExtensionPrefer
     }
 
     _addNumericInput(group, settings, { title, description, settingKey, range }) {
-        const row = new Adw.ActionRow({ 
+        const row = new Adw.ActionRow({
             title,
             subtitle: description
         });
@@ -97,7 +103,7 @@ export default class WindowCenteringExtensionPreferences extends ExtensionPrefer
     }
 
     _addKeybindingEntry(group, settings, { title, description, settingKey }) {
-        const row = new Adw.ActionRow({ 
+        const row = new Adw.ActionRow({
             title,
             subtitle: description
         });

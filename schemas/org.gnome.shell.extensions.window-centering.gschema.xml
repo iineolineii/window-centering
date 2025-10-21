@@ -16,6 +16,9 @@
     <key name="change-size" type="b">
       <default>true</default>
     </key>
+    <key name="include-panel-height" type="b">
+      <default>true</default>
+    </key>
     <key name="centering-keybinding" type="as">
       <default><![CDATA[['<Alt><Shift>A']]]></default>
     </key>
